@@ -56,7 +56,8 @@ Connection: keep-alive
 Look at the terminal where Nginx is running:
 
 ```
-2019/04/22 11:51:59 [warn] 56661#0: *3 upstream server temporarily disabled while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /bin_header HTTP/1.1", upstream: "http://[::1]:8080/", host: "localhost:8000"
+2019/04/22 12:32:20 [error] 57078#0: *1 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /bin_header HTTP/1.1", upstream: "http://127.0.0.1:8080/", host: "localhost:8000"
+2019/04/22 12:32:20 [warn] 57078#0: *1 upstream server temporarily disabled while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /bin_header HTTP/1.1", upstream: "http://127.0.0.1:8080/", host: "localhost:8000"
 ```
 
 # Details
