@@ -5,7 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "express": "node index.js",
+    "express": "node express.js",
+    "http": "node http.js",
     "nginx": "nginx -p `pwd` -c nginx.conf"
   },
   "dependencies": {
