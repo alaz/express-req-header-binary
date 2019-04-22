@@ -1,0 +1,14 @@
+{
+  "name": "express-req-header-binary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "express": "node index.js",
+    "nginx": "nginx -p `pwd` -c nginx.conf"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
