@@ -7,6 +7,8 @@ Behavior under Node versions:
 * 8.15.1: bug
 * 10.15.2: fixed
 
+Confirmed the bug is fixed in Node > 8 in [the Express issue](https://github.com/expressjs/express/issues/3943).
+
 # Steps to reproduce
 
 Prerequisites:
