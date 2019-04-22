@@ -2,6 +2,11 @@
 
 Binary data in a request header value results in Node's HTTP server silently dropping this connection.
 
+Behavior under Node versions:
+
+* 8.15.1: bug
+* 10.15.2: fixed
+
 # Steps to reproduce
 
 Prerequisites:
