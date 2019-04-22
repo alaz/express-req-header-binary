@@ -64,4 +64,4 @@ Look at the terminal where Nginx is running:
 
 Both Nginx locations `/no_header` and `/bin_header` proxy to the Express application's same path. But Nginx sets a request header with binary value when called as `/bin_header`. Express writes nothing to the log and silently drops the connection.
 
-This is incorrect behavior, Web servers should accept any requests and reply with meaningful responses. This could be a security issue as well: if a load balancer sees too many dropped upstream connections, it will mark the upstream host as down. What if it marks all the hosts as down?
+This is incorrect behavior, Web servers should accept any requests and reply with meaningful responses. This could be a security issue as well: if a load balancer sees too many dropped upstream connections, it will mark the upstream host as down. What if it marks all the hosts as down? For example, try fetching `/bin_header` and then immediately `/no_header` - you will see that Nginx still returns `502`, because it has disabled the upstream.
